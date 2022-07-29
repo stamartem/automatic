@@ -1,0 +1,72 @@
+{
+  "id": "ec46bbf5-07a6-43b8-b36d-7a9ff9883776",
+  "version": "2.0",
+  "name": "test2",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "85506bf5-a386-407b-9b17-b3b1a8f6e67d",
+    "name": "123",
+    "commands": [{
+      "id": "1d820f2d-6d50-4532-8f68-088154002f9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "573ef691-cf48-4d16-b675-09f1a0035d04",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d8d6748-90bd-4c85-93af-ac91a70fd5cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89abfcf8-23f0-493a-a7ef-b89a9b54ccb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#item_4_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_4_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_4_title_link']/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b1dfbb4-99e4-46d5-8126-2736fa06a1d0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }]
+  }],
+  "suites": [{
+    "id": "f8081382-0da5-4b41-8910-2848b41c4955",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["85506bf5-a386-407b-9b17-b3b1a8f6e67d"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "9d489c86-c1f3-4f5e-9c96-2eea6725516d",
+  "version": "2.0",
+  "name": "locked",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "cd4ecc74-9cf4-46a8-9c25-7c7204c349bf",
+    "name": "locked",
+    "commands": [{
+      "id": "fe30f7d9-11b5-4154-8a42-b358febf33e9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ceaed9c-69e1-4b21-b30e-023d0c2b082e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f327cae-934a-4b1c-a2d4-e6c021a0a96e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_wrapper",
+      "targets": [
+        ["css=.login_wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e94c1b8-ea08-4a9c-bdfa-9508b877bc49",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "d822d7db-7cc1-4ca0-b321-8c4523332912",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_wrapper",
+      "targets": [
+        ["css=.login_wrapper", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f0f6db-0dbf-4f5e-8b65-13f32cb5899d",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e748ddae-7635-429d-a7d1-304e08d753a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=*[data-test=\"error\"]",
+      "targets": [
+        ["css=*[data-test=\"error\"]", "css:data-attr"],
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Epic sadface: Sorry, this user has been locked out.')]", "xpath:innerText"]
+      ],
+      "value": "Epic sadface: Sorry, this user has been locked out."
+    }]
+  }],
+  "suites": [{
+    "id": "9e146308-343a-409c-b56a-ee3d6cbf9585",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cd4ecc74-9cf4-46a8-9c25-7c7204c349bf"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
